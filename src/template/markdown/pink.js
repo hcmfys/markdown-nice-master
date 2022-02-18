@@ -1,11 +1,13 @@
-export default `/* 自定义样式，实时生效，浏览器实时缓存 */
-
+export default `
 /* 全局属性
  * 页边距 padding: 30px;
  * 全文字体 font-family: ptima-Regular;
  * 英文换行 word-break: break-all;
  */
 #nice {
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  color:#595959
 }
 
 /* 段落，下方未标注标签参数均同此处
@@ -20,55 +22,72 @@ export default `/* 自定义样式，实时生效，浏览器实时缓存 */
  * 首行缩进 text-indent: 2em;
  */
 #nice p {
+  margin: 1em 4px;
 }
 
 /* 一级标题 */
 #nice h1 {
+  margin: 1.2em 0 1em;
+  padding: 0;
+  font-weight: bold;
+  color:#773098;
 }
 
 /* 一级标题内容 */
 #nice h1 .content {
 }
 
-/* 一级标题前缀 */
-#nice h1 .prefix {
-}
-
-/* 一级标题后缀 */
-#nice h1 .suffix {
+/* 一级标题修饰 请参考有实例的主题 */
+#nice h1:after {
 }
 
 /* 二级标题 */
 #nice h2 {
-font-weight: bold;margin: 20px 10px;text-align: center;color: rgb(91, 91, 0);font-size: 160%;
+  min-height: 32px;
+  line-height: 28px;
+  border-bottom: solid 1px #000000;
+  color: #773098;
+  display: inline-block;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #773098;
+  padding-top: 5px;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  margin-bottom: -3px;
+  font-size: 22px;
+  margin:1em auto;
+  padding: 0.5em 0;
+  text-align: center;
+  width: 85%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* 二级标题内容 */
 #nice h2 .content {
 }
 
-/* 二级标题前缀 */
-#nice h2 .prefix {
-}
-
-/* 二级标题后缀 */
-#nice h2 .suffix {
+/* 二级标题修饰 请参考有实例的主题 */
+#nice h2:after {
 }
 
 /* 三级标题 */
 #nice h3 {
+  margin: 1.2em 0 1em;
+  padding: 0;
+  font-weight: bold;
+  color:#773098;
 }
 
 /* 三级标题内容 */
 #nice h3 .content {
 }
 
-/* 三级标题前缀 */
-#nice h3 .prefix {
-}
-
-/* 三级标题后缀 */
-#nice h3 .suffix {
+/* 三级标题修饰 请参考有实例的主题 */
+#nice h3:after {
 }
 
 /* 无序列表整体样式
@@ -86,45 +105,37 @@ font-weight: bold;margin: 20px 10px;text-align: center;color: rgb(91, 91, 0);fon
 /* 列表内容，不要设置li
  */
 #nice li section {
+  margin: 10px 0;
 }
 
-/* 一级引用
+/* 引用
  * 左边缘颜色 border-left-color: black;
  * 背景色 background: gray;
  */
 #nice .multiquote-1 {
+  margin: 10px 5px;
+  border-left: 3px solid #9654B5;
+  border-right: 1px solid #9654B5;
+  color: #616161;
+  quotes: none;
+  background:#FBF9FD
 }
 
-/* 一级引用文字 */
+/* 引用文字 */
 #nice .multiquote-1 p {
 }
 
-/* 二级引用
- */
-#nice .multiquote-2 {
-}
-
-/* 二级引用文字 */
-#nice .multiquote-2 p {
-}
-
-/* 三级引用
- */
-#nice .multiquote-3 {
-}
-
-/* 三级引用文字 */
-#nice .multiquote-3 p {
-}
-
-/* 链接 
+/* 链接
  * border-bottom: 1px solid #009688;
  */
 #nice a {
+  color: #773098;
+  border-bottom: 1px solid #773098;
 }
 
 /* 加粗 */
 #nice strong {
+  color:#773098;
 }
 
 /* 斜体 */
@@ -140,25 +151,28 @@ font-weight: bold;margin: 20px 10px;text-align: center;color: rgb(91, 91, 0);fon
 }
 
 /* 分隔线
- * 粗细、样式和颜色
- * border-top: 1px solid #3e3e3e;
- */
+* 粗细、样式和颜色
+* border-top: 1px solid #3e3e3e;
+*/
 #nice hr {
+  border: 1px solid #773098;
+  margin: 1.5em auto;
 }
 
 /* 图片
- * 宽度 width: 80%;
- * 居中 margin: 0 auto;
- * 居左 margin: 0 0;
- */
+* 宽度 width: 80%;
+* 居中 margin: 0 auto;
+* 居左 margin: 0 0;
+*/
 #nice img {
 }
 
 /* 行内代码 */
 #nice p code, #nice li code {
+  color: #9654B5;
 }
 
-/* 
+/* 非微信代码块
  * 代码块不换行 display: -webkit-box !important;
  * 代码块换行 display: block;
  */
@@ -172,27 +186,20 @@ font-weight: bold;margin: 20px 10px;text-align: center;color: rgb(91, 91, 0);fon
  * 内边距 padding: 5px 10px;
  */
 #nice table tr th,
-#nice table tr td {
-}
-
-/* 
- * 某一列表格列宽控制
- * n 可以修改为具体数字，不修改时表示所有列
- * 最小列宽 min-width: 85px;
- */
-#nice table tr th:nth-of-type(n),
-#nice table tr td:nth-of-type(n){
+  #nice table tr td {
 }
 
 /* 脚注文字 */
 #nice .footnote-word {
+  color: #773098;
 }
 
 /* 脚注上标 */
 #nice .footnote-ref {
+  color: #773098;
 }
 
-/* "参考资料"四个字 
+/* "参考资料"四个字
  * 内容 content: "参考资料";
  */
 #nice .footnotes-sep:before {
@@ -203,7 +210,7 @@ font-weight: bold;margin: 20px 10px;text-align: center;color: rgb(91, 91, 0);fon
 }
 
 /* 参考资料文字 */
-#nice .footnote-item p { 
+#nice .footnote-item p {
 }
 
 /* 参考资料解释 */
@@ -218,5 +225,6 @@ font-weight: bold;margin: 20px 10px;text-align: center;color: rgb(91, 91, 0);fon
 
 /* 行内公式
  */
-#nice .inline-equation svg {  
-}`;
+#nice .inline-equation svg {
+}`
+//姹紫

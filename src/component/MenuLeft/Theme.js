@@ -7,6 +7,12 @@ import {replaceStyle} from "../../utils/helper";
 import TEMPLATE from "../../template/index";
 import "./Theme.css";
 import axios from "axios";
+import aBlue from "../../template/markdown/aBlue";
+import blueK from "../../template/markdown/blueK";
+import lv from "../../template/markdown/lv";
+import mblue from "../../template/markdown/mblue";
+import pink from "../../template/markdown/pink";
+import qwPink from "../../template/markdown/qwPink";
 
 @inject("content")
 @inject("navbar")
@@ -49,7 +55,15 @@ class Theme extends React.Component {
         {themeId: "yong", name: "嫩清", css: TEMPLATE.yong},
         {themeId: "wechat", name: "wechat", css: TEMPLATE.wechat},
         {themeId: "orangle", name: "橙新", css: TEMPLATE.orangle},
+        {themeId: "aBlue", name: "全站蓝", css: TEMPLATE.aBlue},
+        {themeId: "blueK", name: "蓝鲸", css: TEMPLATE.blueK},
+        {themeId: "lv", name: "绿意", css: TEMPLATE.lv},
+        {themeId: "bluePink", name: "绿意紫", css: TEMPLATE.bluePink},
+        {themeId: "mblue", name: "科技蓝", css: TEMPLATE.mblue},
+        {themeId: "pink", name: "姹紫", css: TEMPLATE.pink},
+        {themeId: "qwPink", name: "蔷薇紫", css: TEMPLATE.qwPink},
         {themeId: "simple", name: "便签", css: TEMPLATE.note},
+
         {themeId: "custom", name: "自定义", css: TEMPLATE.custom},
       ];
       console.log("themeList=",themeList)

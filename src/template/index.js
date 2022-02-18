@@ -25,6 +25,14 @@ import macXcode from "./macCode/macXcode";
 import basic from "./basic";
 import red from "./markdown/red";
 
+import aBlue from "./markdown/aBlue";
+import blueK from "./markdown/blueK";
+import lv from "./markdown/lv";
+import mblue from "./markdown/mblue";
+import pink from "./markdown/pink";
+import qwPink from "./markdown/qwPink";
+import bluePink from "./markdown/bluePink";
+
 export default {
   basic,
   normal,
@@ -35,6 +43,13 @@ export default {
   xihu,
   note,
   wechat,
+  aBlue,
+  blueK,
+  lv,
+  mblue,
+  pink,
+  qwPink,
+  bluePink,
   code: {
     atomOneDark,
     atomOneLight,

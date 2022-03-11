@@ -32,7 +32,8 @@ import mblue from "./markdown/mblue";
 import pink from "./markdown/pink";
 import qwPink from "./markdown/qwPink";
 import bluePink from "./markdown/bluePink";
-
+import newPink from "./markdown/newPink";
+//export
 export default {
   basic,
   normal,
@@ -50,6 +51,7 @@ export default {
   pink,
   qwPink,
   bluePink,
+  newPink,
   code: {
     atomOneDark,
     atomOneLight,

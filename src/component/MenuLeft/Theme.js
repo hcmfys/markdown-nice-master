@@ -59,6 +59,7 @@ class Theme extends React.Component {
         {themeId: "blueK", name: "蓝鲸", css: TEMPLATE.blueK},
         {themeId: "lv", name: "绿意", css: TEMPLATE.lv},
         {themeId: "bluePink", name: "绿意紫", css: TEMPLATE.bluePink},
+        {themeId: "newPink", name: "紫意紫", css: TEMPLATE.newPink},
         {themeId: "mblue", name: "科技蓝", css: TEMPLATE.mblue},
         {themeId: "pink", name: "姹紫", css: TEMPLATE.pink},
         {themeId: "qwPink", name: "蔷薇紫", css: TEMPLATE.qwPink},
